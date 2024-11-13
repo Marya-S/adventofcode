@@ -1,4 +1,4 @@
-package org.example.day1;
+package org.example.adventofcode.day1;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;

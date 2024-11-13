@@ -1,4 +1,4 @@
-package org.example.day1;
+package org.example.adventofcode.day1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
