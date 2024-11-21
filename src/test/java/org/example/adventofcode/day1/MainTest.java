@@ -16,16 +16,4 @@ class MainTest {
     void errorInString(String brackets) {
         Assertions.assertThrows(IllegalArgumentException.class, () -> Main.returnFloor(brackets));
     }
-
-    @ParameterizedTest
-    @CsvFileSource(resources = "/squareData.csv", numLinesToSkip = 1)
-    void correctSquareData(int l, int w, int h, int expectedResult) {
-        Assertions.assertEquals(expectedResult, Main.returnSquare(l,w,h));
-    }
-
-    @ParameterizedTest
-    @CsvFileSource(resources = "/errorSquareData.csv", numLinesToSkip = 1)
-    void errorParameters(int l, int w, int h) {
-        Assertions.assertThrows(IllegalArgumentException.class, () -> Main.returnSquare(l,w,h));
-    }
 }
